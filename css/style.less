@@ -1,0 +1,172 @@
+@font-face {
+  font-family: MuseoSans;
+  src: url(../fonts/MuseoSansCyrl500.ttf);
+}
+
+html {
+  font-size: 7px;
+}
+
+.container-fluid {
+
+  .row {
+    nav {
+      .navbar-brand {
+        img {
+          height: 6.562rem;
+          margin-left: 5rem;
+        }
+      }
+      a {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: black !important;
+      }
+      a:hover, .active > a {
+        color: #e54646 !important;
+      }
+      .navbar-brand {
+        position: absolute;
+        top: 0.875rem;
+      }
+
+      .collapse.show, .collapsing {
+        background-color: white;
+        text-align: right;
+      }
+      .btn {
+        margin-right: 5rem;
+      }
+      .btn:before {
+        display: block;
+        content: url("../image/search.svg");
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+      }
+      .btn:hover:before {
+        content: url("../image/search-hover.svg");
+      }
+
+      height: 4.375rem;
+      background-color: white;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      z-index: 3;
+
+    }
+    .bg-red-line {
+      width: 100%;
+      height: 100%;
+      background: url("../image/red-line.png") center center no-repeat;
+      background-size: auto 100%;
+      position: absolute;
+      opacity: .1;
+      z-index: 4;
+      pointer-events: none;
+    }
+
+    .footer {
+      padding-left: 5rem;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 4.375rem;
+      background-color: black;
+      opacity: .5;
+      position: absolute;
+      bottom: 0;
+      font-size: 0.875rem;
+      color: #bcbcbc;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      z-index: 1;
+      left: 0;
+    }
+    .carousel {
+      h1 {
+        color: black;
+        font-family: MuseoSans, sans-serif;
+        font-weight: 500;
+        font-size: 3.125rem;
+      }
+      .carousel-caption {
+        .btn {
+          width: max-content;
+          height: 3.75rem;
+          border-radius: 1.875rem;
+          padding: 0 2.5rem;
+          text-transform: uppercase;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          font-size: 0.812rem;
+          cursor: pointer;
+
+        }
+        top: 0;
+        left: 0;
+        right: auto;
+        width: 20rem;
+        bottom: auto;
+        height: 100%;
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 5rem;
+      }
+      z-index: 2;
+    }
+    .carousel-indicators {
+      li {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #bcbcbc;
+        cursor: pointer;
+      }
+      li.active {
+        background-color: #e83f3f;
+
+      }
+      bottom: 5rem;
+    }
+    .carousel-control-next, .carousel-control-prev {
+      opacity: 1;
+      width: 5rem;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      height: 2.5rem;
+      width: 2.5rem;
+      background-size: auto auto;
+    }
+    .carousel-control-next-icon {
+      background-image: url("../image/rigth-arrow.png");
+    }
+    .carousel-control-next-icon:hover {
+      background-image: url("../image/right-arrow-hover.png");
+    }
+    .carousel-control-prev-icon {
+      background-image: url("../image/left-arrow.png");
+    }
+    .carousel-control-prev-icon:hover {
+      background-image: url("../image/left-arrow-hover.png");
+    }
+
+    background: url("../image/white-wood.jpg") center center no-repeat;
+    background-size: cover;
+    max-width: 1280px;
+    max-height: 780px;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+  }
+
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}

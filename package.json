@@ -1,0 +1,8 @@
+{
+  "name": "testWork",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "less": "^2.7.3"
+  }
+}
